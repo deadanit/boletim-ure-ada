@@ -1,0 +1,503 @@
+/* =====================================
+   Paleta de Cores Institucionais
+   (Adaptado para as cores Preto e Vermelho solicitadas)
+   ===================================== */
+:root {
+    --color-primary-blue: #000000;   /* NOVO: Preto (Cor Principal/Texto) */
+    --color-secondary-green: #ED1C24; /* NOVO: Vermelho (Cor de Destaque) */
+    --color-tertiary-yellow: #FFC93C; /* Amarelo (Mantido para Contraste) */
+    --color-background-offwhite: #F7F8FA; /* Fundo off-white */
+    --color-text-dark: #333;
+    --color-text-light: #fff;
+    --color-card-background: #ffffff;
+    --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave */
+    --border-radius-large: 1rem; /* Borda arredondada para cards */
+    --transition-speed: 0.3s;
+}
+
+/* =====================================
+   Reset e Tipografia
+   ===================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-background-offwhite);
+    color: var(--color-text-dark);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold */
+    color: var(--color-primary-blue); /* Agora Preto */
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary-blue); /* Agora Preto */
+    transition: color var(--transition-speed);
+}
+
+a:hover {
+    color: var(--color-secondary-green); /* Agora Vermelho */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* =====================================
+   Cabeçalho Fixo (Header)
+   ===================================== */
+#header-principal {
+    background-color: var(--color-card-background);
+    box-shadow: var(--shadow-soft);
+    padding: 1rem 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.logo-seduc {
+    height: 40px;
+    margin-right: 15px;
+}
+
+.titles h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    line-height: 1.1;
+}
+
+.titles h2 {
+    font-size: 0.9rem;
+    color: var(--color-text-dark);
+    font-weight: 400; /* Inter Regular */
+    font-family: 'Inter', sans-serif;
+}
+
+.edition-info {
+    text-align: right;
+}
+
+.edition-number {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-secondary-green); /* Agora Vermelho */
+}
+
+.edition-date {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--color-text-dark);
+}
+
+/* =====================================
+   Menu de Navegação Fixo (Navbar)
+   ===================================== */
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--color-primary-blue); /* Agora Preto */
+    box-shadow: var(--shadow-soft);
+    padding: 0.5rem 0;
+}
+
+/* MODIFICADO: Removemos a rolagem horizontal e adicionamos quebra de linha */
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo */
+    justify-content: center; /* Centraliza os itens */
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 5px; 
+}
+
+/* Removidos estilos de scrollbar para menu horizontal */
+
+.nav-list a {
+    color: var(--color-text-light);
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 0.5rem 0;
+    display: block;
+    transition: background-color var(--transition-speed);
+    text-transform: uppercase;
+}
+
+.nav-list a:hover {
+    color: var(--color-tertiary-yellow);
+}
+
+/* =====================================
+   Busca Dinâmica
+   ===================================== */
+#search-bar {
+    padding: 2rem 0 1rem;
+}
+
+.search-input-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-card-background);
+    border-radius: var(--border-radius-large);
+    box-shadow: var(--shadow-soft);
+    padding: 0.75rem 1rem;
+    border: 2px solid transparent;
+    transition: border-color var(--transition-speed);
+}
+
+.search-input-wrapper:focus-within {
+    border-color: var(--color-secondary-green); /* Agora Vermelho */
+}
+
+#search-input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+}
+
+.search-input-wrapper svg {
+    color: var(--color-primary-blue); /* Agora Preto */
+    width: 20px;
+    height: 20px;
+}
+
+/* =====================================
+   Conteúdo Principal (Main Content)
+   ===================================== */
+#main-content {
+    padding-bottom: 4rem;
+}
+
+.news-section {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    /* Adiciona padding no topo para garantir que o scroll suave não esconda o título */
+    scroll-margin-top: calc(90px + 2rem); /* Altura aproximada do header + navbar + padding */
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid var(--color-secondary-green); /* Agora Vermelho */
+    color: var(--color-primary-blue); /* Agora Preto */
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* =====================================
+   Cards de Notícias
+   ===================================== */
+.news-card {
+    background-color: var(--color-card-background);
+    border-radius: var(--border-radius-large);
+    box-shadow: var(--shadow-soft);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    /* Placeholder para as imagens */
+    background-color: #eee;
+}
+
+.card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-primary-blue); /* Agora Preto */
+    line-height: 1.3;
+}
+
+.card-summary {
+    font-size: 0.95rem;
+    color: var(--color-text-dark);
+    margin-bottom: 1rem;
+    /* Limita o resumo a cerca de 3 linhas */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.read-more-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1rem;
+    background-color: var(--color-secondary-green); /* Agora Vermelho */
+    color: var(--color-text-light);
+    border-radius: 0.5rem;
+    font-weight: 700;
+    margin-top: auto;
+    transition: background-color var(--transition-speed);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.read-more-btn:hover {
+    background-color: var(--color-primary-blue); /* Hover Preto */
+    color: var(--color-text-light);
+}
+
+.read-more-btn svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+/* Estilo para cards ocultos pela busca */
+.news-card.hidden {
+    display: none;
+}
+
+/* =====================================
+   Rodapé Fixo
+   ===================================== */
+#footer-principal {
+    background-color: var(--color-primary-blue); /* Agora Preto */
+    color: var(--color-text-light);
+    padding-top: 2rem;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-contact {
+    max-width: 400px;
+}
+
+.logo-ure-ada {
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.footer-contact p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact p svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    color: var(--color-tertiary-yellow);
+}
+
+.footer-contact a {
+    color: var(--color-text-light);
+    font-weight: 400;
+}
+
+.footer-contact a:hover {
+    color: var(--color-tertiary-yellow);
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-height: 100px;
+}
+
+.btn-archive {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--color-tertiary-yellow);
+    color: var(--color-primary-blue); /* Agora Preto */
+    border-radius: 0.5rem;
+    font-weight: 700;
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+.btn-archive:hover {
+    background-color: #ffda76;
+    transform: translateY(-2px);
+}
+
+.btn-archive svg {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+    background-color: #1a1a1a; /* NOVO: Preto muito escuro para contraste */
+}
+
+/* =====================================
+   Botão Voltar ao Topo
+   ===================================== */
+#back-to-top {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    border: none;
+    outline: none;
+    background-color: var(--color-tertiary-yellow);
+    color: var(--color-primary-blue); /* Agora Preto */
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color var(--transition-speed);
+}
+
+#back-to-top:hover {
+    background-color: var(--color-secondary-green); /* Agora Vermelho */
+    color: var(--color-text-light);
+}
+
+#back-to-top svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+
+/* =====================================
+   Responsividade (Mobile First)
+   ===================================== */
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-area {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .logo-seduc {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .titles h1 {
+        font-size: 1rem;
+    }
+
+    .titles h2 {
+        font-size: 0.8rem;
+    }
+
+    .edition-info {
+        text-align: center;
+        width: 100%;
+        margin-top: 0.5rem;
+        padding-top: 0.5rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-list {
+        /* Permite que os itens quebrem a linha */
+        justify-content: space-around; 
+        gap: 0.5rem;
+    }
+
+    .nav-list li {
+        flex-shrink: 0;
+    }
+
+    .nav-list a {
+        font-size: 0.75rem;
+        padding: 0.5rem 0.25rem;
+    }
+
+    .news-grid {
+        gap: 1.5rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-contact {
+        max-width: 100%;
+    }
+
+    .footer-contact p {
+        justify-content: center;
+    }
+
+    .footer-links {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .btn-archive {
+        width: 100%;
+    }
+
+    /* Ajuste para scroll suave em mobile */
+    .news-section {
+        scroll-margin-top: calc(150px + 2rem);
+    }
+}
