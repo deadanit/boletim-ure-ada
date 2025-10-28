@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Matéria | Boletim URE Adamantina</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../../../../css/style.css">
+    
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <style>
+        .article-wrapper {
+            padding: 3rem 0;
+        }
+        
+        /* Contêiner branco para o conteúdo do artigo */
+        .article-container {
+            background-color: var(--color-card-background);
+            box-shadow: var(--shadow-soft);
+            border-radius: var(--border-radius-large);
+            padding: 2rem;
+        }
+
+        /* Limita a largura do texto para melhor leitura */
+        .article-content {
+            max-width: 800px; 
+            margin: 0 auto;
+        }
+        
+        /* Estilo do Botão Voltar */
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            margin-bottom: 2rem;
+            background-color: var(--color-primary-blue); /* Preto */
+            color: var(--color-text-light); /* Branco */
+            border-radius: 0.5rem;
+            font-weight: 700;
+            transition: background-color var(--transition-speed);
+        }
+        
+        .back-btn:hover {
+            background-color: #333; /* Cinza escuro no hover */
+            color: var(--color-tertiary-yellow); /* Destaque em amarelo */
+        }
+        
+        .back-btn svg {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+        }
+
+        .article-title {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--color-secondary-green); /* Título em vermelho para destaque */
+        }
+        
+        .article-meta {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Estilo para parágrafos do corpo do texto */
+        .article-body p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+        
+        /* Estilo para listas dentro do artigo (se necessário) */
+        .article-body ul, .article-body ol {
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Estilo para imagens do artigo (se houver) */
+        .article-body img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+            display: block;
+        }
+
+        /* Caixa de Chamada para Ação/Link Externo */
+        .cta-box {
+            background-color: var(--color-background-offwhite);
+            border: 2px solid var(--color-secondary-green);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+        
+        .cta-box a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--color-secondary-green);
+            color: var(--color-text-light);
+            border-radius: 0.5rem;
+            font-weight: 700;
+            transition: background-color 0.3s;
+        }
+
+        .cta-box a:hover {
+            background-color: var(--color-primary-blue); /* Hover Preto */
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header-principal">
+        <div class="container header-content">
+            <div class="logo-area">
+                <img src="../../../../img/logotipo_seduc.png" alt="Logotipo SEDUC" class="logo-seduc">
+                <div class="titles">
+                    <h1>BOLETIM INFORMATIVO — URE Adamantina</h1>
+                    <h2>Atualizações, comunicados e destaques da Regional</h2>
+                </div>
+            </div>
+            <div class="edition-info">
+                <span class="edition-number">Edição XX</span>
+                <span class="edition-date">DD/MM/AAAA</span>
+            </div>
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="../index.html#ure-adamantina">URE ADAMANTINA</a></li>
+                <li><a href="../index.html#escolas-estaduais">ESCOLAS ESTADUAIS</a></li>
+                <li><a href="../index.html#seintec">SEINTEC</a></li>
+                <li><a href="../index.html#sepes">SEPES</a></li>
+                <li><a href="../index.html#suped">SUPED</a></li>
+                <li><a href="../index.html#efape">EFAPE</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main id="main-content">
+        <div class="container article-wrapper">
+
+            <div class="article-container">
+                <div class="article-content">
+                    
+                    <h1 class="article-title">TÍTULO DA NOTÍCIA</h1>
+                    
+                    <div class="article-meta">
+                        
+                    </div>
+                    
+                    <div class="article-body">
+					
+						<img src="" alt="">
+                        
+                        <p><strong>[INTRODUÇÃO DA MATÉRIA]</strong> Este parágrafo serve como introdução ou resumo do que será detalhado a seguir. Mantenha o texto objetivo e formatado em parágrafos para melhor leitura em celulares e computadores.</p>
+                        
+                        <p>Aqui você insere o corpo principal do texto da sua matéria. O layout já está configurado para que o texto se ajuste automaticamente, sem exigir rolagem horizontal em telas pequenas. Use tags <code>&lt;p&gt;</code> para cada novo parágrafo.</p>
+
+                        <p>Ao converter seus documentos Word, preste atenção em elementos como listas (`<ul>` e `<li>`) ou tabelas. Se houver tabelas complexas, procure simplificá-las, pois tabelas grandes são difíceis de visualizar em celulares.</p>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer id="footer-principal">
+        <div class="container footer-content">
+            <div class="footer-contact">
+                <p><strong>UNIDADE REGIONAL DE ENSINO DE ADAMANTINA</strong></p>
+                <p><i data-lucide="map-pin"></i> Alameda Bráulio Molina Frias, 120 — Vila Cicma — Adamantina/SP</p>
+                <p><i data-lucide="mail"></i> E-mail: <a href="mailto:ada@educacao.sp.gov.br">ada@educacao.sp.gov.br</a></p>
+                <p><i data-lucide="globe"></i> Site: <a href="https://deadamantina.educacao.sp.gov.br" target="_blank">deadamantina.educacao.sp.gov.br</a></p>
+                <p><i data-lucide="phone"></i> Telefone: (18) 3502-2300</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://deadamantina.educacao.sp.gov.br/boletim-informativo" class="btn-archive" target="_blank">
+                    <i data-lucide="book-open"></i> Edições anteriores
+                </a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2025 SEINTEC / URE Adamantina.</p>
+        </div>
+    </footer>
+    
+    <button id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+        <i data-lucide="chevron-up"></i>
+    </button>
+    
+    <script>
+        // Inicializa os ícones do Lucide
+        lucide.createIcons();
+        
+        // Lógica do botão Voltar ao Topo (Mantida no template)
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
