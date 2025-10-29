@@ -512,3 +512,35 @@ a:hover {
         scroll-margin-top: calc(150px + 2rem);
     }
 }
+
+/* =====================================
+   Botão de Impressão no Cabeçalho
+   ===================================== */
+#print-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    
+    /* Usa a cor de destaque (Vermelho) para o botão */
+    background-color: var(--color-secondary-green); 
+    color: var(--color-text-light);
+    
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: background-color var(--transition-speed);
+}
+
+#print-button:hover {
+    background-color: var(--color-primary-blue); /* Hover Preto */
+}
+
+#print-button svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
