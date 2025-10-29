@@ -544,3 +544,16 @@ a:hover {
     height: 16px;
     margin-right: 5px;
 }
+
+/* =====================================
+   ESTILOS ESPECÍFICOS PARA IMPRESSÃO (PRINT MEDIA)
+   Oculta APENAS o botão de impressão.
+   ===================================== */
+@media print {
+    
+    /* Regra para ocultar o botão "Exportar PDF" */
+    #print-button {
+        display: none !important;
+    }
+    }
+}
