@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boletim Informativo - URE Adamantina - Edição XX</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
     <link rel="stylesheet" href="../../../css/style.css">
 </head>
 <body>
@@ -21,7 +23,7 @@
             </div>
             <div class="edition-info">
                 <span class="edition-number">Edição XX</span>
-                <span class="edition-date"><strong>DD/MM/AAAA</strong></span>
+                <strong><span class="edition-date">DD/MM/AAAA</span></strong>
 				<button id="print-button" title="Imprimir ou Exportar para PDF">
 					<i data-lucide="printer"></i> Exportar PDF
 				</button>
@@ -36,7 +38,6 @@
                 <li><a href="#escolas-estaduais">ESCOLAS ESTADUAIS</a></li>
                 <li><a href="#seintec">SEINTEC</a></li>
                 <li><a href="#sepes">SEPES</a></li>
-				<li><a href="#suart">SUART</a></li>
                 <li><a href="#suped">SUPED</a></li>
                 <li><a href="#efape">EFAPE</a></li>
             </ul>
@@ -45,166 +46,39 @@
 
     <main id="main-content" class="container">
 
-        <section id="ure-adamantina" class="news-section">
+        <section id="ure-adamantina" class="news-section js-news-section">
             <h2 class="section-title">UNIDADE REGIONAL DE ENSINO</h2>
-            <div class="news-grid">
-                
-                <article class="news-card">
-					<div class="image-wrapper">
-						<img src="./img/" class="card-image">
-					</div>
-                    <div class="card-content">
-                        <h3 class="card-title">
-                            <a target="_blank" href="">Nótícia URE 1</a>
-                        </h3>
-                        <p class="card-summary">Resumo da notícia URE 1.</p>
-                        <a target="_blank" href="" class="read-more-btn">
-                            <i data-lucide="file-text"></i> Ler matéria completa
-                        </a>
-                    </div>
-                </article>
-                
-                <article class="news-card">
-					<div class="image-wrapper">
-						<img src="./img/" class="card-image">
-					</div>
-                    <div class="card-content">
-                        <h3 class="card-title">
-                            <a target="_blank" href="">Notícia URE 2</a>
-                        </h3>
-                        <p class="card-summary">Resumo da notícia URE 2.</p>
-                         <a target="_blank" href="" class="read-more-btn">
-                            <i data-lucide="file-text"></i> Ler matéria completa
-                        </a>
-                    </div>
-                </article>
-
-                </div>
+            <div class="news-grid" id="content-ure-adamantina"></div>
         </section>
 
-        <section id="escolas-estaduais" class="news-section">
+        <section id="escolas-estaduais" class="news-section js-news-section">
             <h2 class="section-title">ESCOLAS ESTADUAIS</h2>
-            <div class="news-grid">
-                <article class="news-card">
-					<div class="image-wrapper">
-						<img src="./img/" class="card-image">
-					</div>
-                    <div class="card-content">
-                         <h3 class="card-title">
-                            <a target="_blank" href="">Notícia Escolas 1</a>
-                        </h3>
-                        <p class="card-summary">Resumo da Notícia Escolas 1.</p>
-                        <a target="_blank" href="" class="read-more-btn">
-                            <i data-lucide="file-text"></i> Ler matéria completa
-                        </a>
-                    </div>
-                </article>
-
-                 <article class="news-card">
-					<div class="image-wrapper">
-						<img src="./img/" class="card-image">
-					</div>
-                    <div class="card-content">
-                        <h3 class="card-title">
-                            <a target="_blank" href="">Notícia Escolas 2</a>
-                        </h3>
-                        <p class="card-summary">Resumo da Notícia Escolas 2.</p>
-                        <a target="_blank" href="" class="read-more-btn">
-                            <i data-lucide="file-text"></i> Ler matéria completa
-                        </a>
-                    </div>
-                </article>
-
-                </div>
+            <div class="news-grid" id="content-escolas-estaduais"></div>
         </section>
         
-        <section id="seintec" class="news-section">
+        <section id="seintec" class="news-section js-news-section">
             <h2 class="section-title">SEINTEC – SERVIÇO DE INFORMAÇÕES EDUCACIONAIS E TECNOLOGIA</h2>
-            <div class="news-list">
-                <article class="list-item">
-                    <div class="item-content">
-                        <h3 class="item-title">
-                            <a target="_blank" href="">Título do Comunicado</a>
-                        </h3>
-                        <p class="item-summary">Resumo do Comunicado.</p>
-                    </div>
-					<a target="_blank" href="" class="list-link">
-						<strong>Saiba Mais</strong><br><br>
-					</a>
-                </article>
-                
-                </div>
+            <div class="news-list" id="content-seintec"></div>
         </section>
 
-        <section id="sepes" class="news-section">
+        <section id="sepes" class="news-section js-news-section">
             <h2 class="section-title">SEPES – SERVIÇO DE PESSOAS</h2>
-            <div class="news-list">
-                <article class="list-item">
-                    <div class="item-content">
-                        <h3 class="item-title">
-                            <a target="_blank" href="">Título do Comunicado</a>
-                        </h3>
-                        <p class="item-summary">Resumo do Comunicado.</p>
-                    </div>
-					<a target="_blank" href="" class="list-link">
-						<strong>Saiba Mais</strong><br><br>
-					</a>
-                </article>
-                
-                 </div>
+            <div class="news-list" id="content-sepes"></div>
         </section>
 
-        <section id="suart" class="news-section">
+        <section id="suart" class="news-section js-news-section">
             <h2 class="section-title">SUART – SUBSECRETARIA DE ARTICULAÇÃO DA REDE DE ENSINO</h2>
-            <div class="news-list">
-                <article class="list-item">
-                    <div class="item-content">
-                        <h3 class="item-title">
-                            <a target="_blank" href="">Título do Comunicado</a>
-                        </h3>
-                        <p class="item-summary">Resumo do Comunicado.</p>
-                    </div>
-					<a target="_blank" href="" class="list-link">
-						<strong>Saiba Mais</strong><br><br>
-					</a>
-                </article>
-                
-                </div>
+            <div class="news-list" id="content-suart"></div>
         </section>
 		
-		<section id="suped" class="news-section">
+		<section id="suped" class="news-section js-news-section">
             <h2 class="section-title">SUPED – SUBSECRETARIA PEDAGÓGICA</h2>
-            <div class="news-list">
-                <article class="list-item">
-                    <div class="item-content">
-                        <h3 class="item-title">
-                            <a target="_blank" href="">Título do Comunicado</a>
-                        </h3>
-                        <p class="item-summary">Resumo do Comunicado.</p>
-                    </div>
-					<a target="_blank" href="" class="list-link">
-						<strong>Saiba Mais</strong><br><br>
-					</a>
-                </article>                
-                </div>
+            <div class="news-list" id="content-suped"></div>
         </section>
 
-        <section id="efape" class="news-section">
-            <h2 class="section-title">EFAPE – ESCOLA DE FORMAÇÃO E APERFEIÇOAMENTO DOS PROFISSIONAIS DA EDUCAÇÃO</h2>
-            <div class="news-list">
-                <article class="list-item">
-                    <div class="item-content">
-                        <h3 class="item-title">
-                            <a target="_blank" href="">Título do Comunicado</a>
-                        </h3>
-                        <p class="item-summary">Resumo do Comunicado.</p>
-                    </div>
-					<a target="_blank" href="" class="list-link">
-						<strong>Saiba Mais</strong><br><br>
-					</a>
-                </article>
-                
-                </div>
+        <section id="efape" class="news-section js-news-section">
+            <h2 class="section-title">EFAPE – ESCOLA DE FORMAÇÃO</h2>
+            <div class="news-list" id="content-efape"></div>
         </section>
 
     </main>
@@ -233,11 +107,11 @@
         </div>
     </footer>
 
-    <script src="../../../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>    
+    <script src="./js/data.js"></script>
+    <script src="./js/script.js"></script>
     <script>
-        // Inicializa os ícones Lucide após o carregamento do DOM
         lucide.createIcons();
     </script>
-	<script async data-id="101479870" src="//static.getclicky.com/js"></script>
 </body>
 </html>
