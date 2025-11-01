@@ -52,7 +52,7 @@ titulo:
 resumo: 
 
 
-## efape: ESCOLA DE FORMAÇÃO
+## efape: ESCOLA DE FORMAÇÃO E APERFEIÇOAMENTO DOS PROFISSIONAIS DA EDUCAÇÃO
 tipo: lista
 nomeArquivo: 
 titulo: 

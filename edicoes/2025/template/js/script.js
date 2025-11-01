@@ -169,6 +169,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     container.innerHTML = htmlContent;
                     sectionElement.style.display = ''; // Exibe
+					
+					const header_item = document.createElement("li");
+					header_item.innerHTML = '<a href="#'+secaoId+'">'+ secaoId.replace('-', ' ') +'</a>';
+					document.getElementById("header-menu").appendChild(header_item);
                 } else {
                     sectionElement.style.display = 'none'; // Oculta se vazio
                 }
