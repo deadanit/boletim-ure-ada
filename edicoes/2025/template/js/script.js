@@ -111,6 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Atualiza Metadados no HTML
             document.querySelector('.edition-number').textContent = `Edição ${globalMeta.edicao || 'XX'}`;
             document.querySelector('.edition-date').textContent = globalMeta.data || 'DD/MM/AAAA';
+			document.title = document.title + ' ' + (globalMeta.edicao || 'XX') + ' de ' + (globalMeta.data || 'DD/MM/AAAA');
 
 
             // 2. Injeta o Conteúdo no HTML e controla a visibilidade
@@ -127,7 +128,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     secao.materias.forEach(item => {
                         
-                        const linkPath = item.nomeArquivo ? `./docs/${item.nomeArquivo}` : '#'; 
+                        // ==========================================================
+                        // INÍCIO DA ALTERAÇÃO PARA SUPORTAR LINKS EXTERNOS
+                        // ==========================================================
+                        // Verifica se nomeArquivo começa com 'http', 'https' ou '//'
+                        const isExternal = item.nomeArquivo && (item.nomeArquivo.startsWith('http') || item.nomeArquivo.startsWith('//'));
+                        
+                        // Se for externo, usa o link direto. Caso contrário, assume que está em ./docs/
+                        const linkPath = item.nomeArquivo 
+                            ? (isExternal ? item.nomeArquivo : `./docs/${item.nomeArquivo}`) 
+                            : '#';
+                        // ==========================================================
+                        // FIM DA ALTERAÇÃO
+                        // ==========================================================
                         
                         if (item.tipo === 'card') {
                             const imagePath = item.nomeImagem ? `./img/${item.nomeImagem}` : './img/default.png'; 
@@ -139,10 +152,10 @@ document.addEventListener('DOMContentLoaded', () => {
                                     </div>
                                     <div class="card-content">
                                         <h3 class="card-title">
-                                            <a href="${linkPath}">${item.titulo || 'Sem Título'}</a>
+                                            <a target="_blank" href="${linkPath}">${item.titulo || 'Sem Título'}</a>
                                         </h3>
                                         <div class="card-summary">${item.resumo || ''}</div>
-                                        <a href="${linkPath}" class="read-more-btn">
+                                        <a target="_blank" href="${linkPath}" class="read-more-btn">
                                             <i data-lucide="file-text"></i> Ler matéria completa
                                         </a>
                                     </div>
@@ -154,12 +167,12 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <article class="list-item">
                                     <div class="item-content">
                                         <h3 class="item-title">
-                                            <a href="${linkPath}">${item.titulo || 'Sem Título'}</a>
+                                            <a target="_blank" href="${linkPath}">${item.titulo || 'Sem Título'}</a>
                                         </h3>
                                         <div class="item-summary">${item.resumo || ''}</div>
                                     </div>
-                                    <a href="${linkPath}" class="list-link">
-                                        Saiba Mais
+                                    <a target="_blank" href="${linkPath}" class="list-link">
+                                        <strong>Saiba Mais</strong>
                                     </a>
                                 </div>
                             </article><br>
