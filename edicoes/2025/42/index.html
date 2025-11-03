@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim Informativo - URE Adamantina - Edição </title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+
+    <header id="header-principal">
+        <div class="container header-content">
+            <div class="logo-area">
+                <img src="../../../img/logotipo_seduc.png" alt="Logotipo SEDUC/SP" class="logo-seduc">
+                <div class="titles">
+                    <h1>Boletim Informativo — URE Adamantina</h1>
+                    <h2>Atualizações, comunicados e destaques da Regional</h2>
+                </div>
+            </div>
+            <div class="edition-info">
+                <span class="edition-number">Edição XX</span>
+                <strong><span class="edition-date">DD/MM/AAAA</span></strong>
+				<button id="print-button" title="Imprimir ou Exportar para PDF">
+					<i data-lucide="printer"></i> Exportar PDF
+				</button>
+            </div>
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <div class="container nav-list-wrapper">
+            <ul class="nav-list" id="header-menu">
+                
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content" class="container">
+
+        <section id="ure-adamantina" class="news-section js-news-section">
+            <h2 class="section-title">UNIDADE REGIONAL DE ENSINO</h2>
+            <div class="news-grid" id="content-ure-adamantina"></div>
+        </section>
+
+        <section id="escolas-estaduais" class="news-section js-news-section">
+            <h2 class="section-title">ESCOLAS ESTADUAIS</h2>
+            <div class="news-grid" id="content-escolas-estaduais"></div>
+        </section>
+        
+        <section id="seintec" class="news-section js-news-section">
+            <h2 class="section-title">SEINTEC – SERVIÇO DE INFORMAÇÕES EDUCACIONAIS E TECNOLOGIA</h2>
+            <div class="news-list" id="content-seintec"></div>
+        </section>
+
+        <section id="sepes" class="news-section js-news-section">
+            <h2 class="section-title">SEPES – SERVIÇO DE PESSOAS</h2>
+            <div class="news-list" id="content-sepes"></div>
+        </section>
+
+        <section id="suart" class="news-section js-news-section">
+            <h2 class="section-title">SUART – SUBSECRETARIA DE ARTICULAÇÃO DA REDE DE ENSINO</h2>
+            <div class="news-list" id="content-suart"></div>
+        </section>
+		
+		<section id="suped" class="news-section js-news-section">
+            <h2 class="section-title">SUPED – SUBSECRETARIA PEDAGÓGICA</h2>
+            <div class="news-list" id="content-suped"></div>
+        </section>
+
+        <section id="efape" class="news-section js-news-section">
+            <h2 class="section-title">EFAPE – ESCOLA DE FORMAÇÃO E APERFEIÇOAMENTO DOS PROFISSIONAIS DA EDUCAÇÃO</h2>
+            <div class="news-list" id="content-efape"></div>
+        </section>
+
+    </main>
+
+    <button id="back-to-top" title="Voltar ao Topo">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <footer id="footer-principal">
+        <div class="container footer-content">
+            <div class="footer-contact">
+                <p><strong>UNIDADE REGIONAL DE ENSINO DE ADAMANTINA</strong></p>
+                <p><i data-lucide="map-pin"></i> Alameda Bráulio Molina Frias, 120 — Vila Cicma — Adamantina/SP</p>
+                <p><i data-lucide="mail"></i> E-mail: <a target="_blank" href="mailto:ada@educacao.sp.gov.br">ada@educacao.sp.gov.br</a></p>
+                <p><i data-lucide="globe"></i> Site: <a target="_blank" href="https://deadamantina.educacao.sp.gov.br" target="_blank">deadamantina.educacao.sp.gov.br</a></p>
+                <p><i data-lucide="phone"></i> Telefone: (18) 3502-2300</p>
+            </div>
+            <div class="footer-links">
+                <a target="_blank" href="https://deadamantina.educacao.sp.gov.br/boletim-informativo" class="btn-archive" target="_blank">
+                    <i data-lucide="book-open"></i> Edições anteriores
+                </a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+             <p>2025 SEINTEC / URE Adamantina.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>    
+    <script src="./js/data.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
