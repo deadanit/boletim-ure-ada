@@ -49,6 +49,12 @@ titulo: Novo Canal de Atendimento para Garantia (Notebooks Positivo)
 resumo: Informamos que o canal de acionamento da garantia dos notebooks Positivo foi alterado novamente.
 
 
+## segre: SEGRE – SERVIÇO DE GESTÃO DA REDE ESCOLAR
+tipo: lista
+nomeArquivo: "COMUNICADO 01 GEMP_DPED.pdf"
+titulo: Distribuição dos Kits de Material Escolar – 2026
+resumo: Informamos que a distribuição dos Kits de Materiais Escolares referentes ao ano letivo de **2026** terá início a partir de **03/11/2025**.
+
 ## sepes: SERVIÇO DE PESSOAS
 tipo: lista
 nomeArquivo: "https://youtu.be/Yd_PBvy8eRE?si=khP5xHYTz-VCXlIx"
