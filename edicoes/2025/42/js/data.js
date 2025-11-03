@@ -37,6 +37,13 @@ titulo: Alunos da Escola Carrara são premiados na OLITEF 2025
 resumo: Em um momento que reafirma a força da educação e o protagonismo dos jovens em Lucélia, os estudantes da Escola Estadual Carlos Umberto Carrara se destacaram na segunda edição da Olimpíada do Tesouro Direto de Educação Financeira (OLITEF 2025) e conquistaram medalhas que representam muito mais que troféus: simbolizam responsabilidade, preparo e maturidade financeira.
 
 
+## segre: SEGRE – SERVIÇO DE GESTÃO DA REDE ESCOLAR
+tipo: lista
+nomeArquivo: "COMUNICADO 01 GEMP_DPED.pdf"
+titulo: Distribuição dos Kits de Material Escolar – 2026
+resumo: Informamos que a distribuição dos Kits de Materiais Escolares referentes ao ano letivo de **2026** terá início a partir de **03/11/2025**.
+
+
 ## seintec: SERVIÇO DE INFORMAÇÕES EDUCACIONAIS E TECNOLOGIA
 tipo: lista
 nomeArquivo: "Planejamento de Equipamentos Saresp.pdf"
@@ -48,12 +55,6 @@ nomeArquivo: "Novo Canal de Atendimento para Garantia.pdf"
 titulo: Novo Canal de Atendimento para Garantia (Notebooks Positivo)
 resumo: Informamos que o canal de acionamento da garantia dos notebooks Positivo foi alterado novamente.
 
-
-## segre: SEGRE – SERVIÇO DE GESTÃO DA REDE ESCOLAR
-tipo: lista
-nomeArquivo: "COMUNICADO 01 GEMP_DPED.pdf"
-titulo: Distribuição dos Kits de Material Escolar – 2026
-resumo: Informamos que a distribuição dos Kits de Materiais Escolares referentes ao ano letivo de **2026** terá início a partir de **03/11/2025**.
 
 ## sepes: SERVIÇO DE PESSOAS
 tipo: lista

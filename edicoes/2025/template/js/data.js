@@ -25,7 +25,28 @@ titulo:
 resumo: 
 
 
+## seafin: ​​SEAFIN – SERVIÇO DE ADMINISTRAÇÃO E FINANÇAS
+tipo: lista
+nomeArquivo: 
+titulo: 
+resumo: 
+
+
+## segre: SEGRE – SERVIÇO DE GESTÃO DA REDE ESCOLAR
+tipo: lista
+nomeArquivo: 
+titulo: 
+resumo: 
+
+
 ## seintec: SERVIÇO DE INFORMAÇÕES EDUCACIONAIS E TECNOLOGIA
+tipo: lista
+nomeArquivo: 
+titulo: 
+resumo:
+
+
+## seom: SERVIÇO DE OBRAS E MANUTENÇÃO ESCOLAR
 tipo: lista
 nomeArquivo: 
 titulo: 
