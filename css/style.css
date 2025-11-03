@@ -551,6 +551,10 @@ a:hover {
    ===================================== */
 @media print {
     
+	body {
+		zoom: 0.8;
+	}
+  
     /* Regra para ocultar o botão "Exportar PDF" */
     #print-button {
         display: none !important;
