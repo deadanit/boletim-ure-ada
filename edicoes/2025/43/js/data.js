@@ -38,6 +38,11 @@ nomeArquivo: 0711 SUPED.pdf
 titulo: BOLETIM SUBSECRETARIA PEDAGÓGICA
 resumo: Pesquisa de Avaliação das Práticas do Programa Ensino Integral; Atualização dos Regimentos Escolares 2026 e Educação Ambiental Climática; Projeto TEDx – Oratória (3ª série EM); Levantamento das Turmas de ACDA de Arte – 2025; Programa Prontos pro Mundo – Processo Seletivo 2025.2, Curso de Inglês Síncrono, Evento “Pé na Estrada”, Embaixada Prontos pro Mundo e Mapeamento de Estudantes com Conhecimento em Mandarim.
 
+tipo: lista
+nomeArquivo: "pesquisa papp.pdf"
+titulo: Pesquisa de Avaliação das Práticas PEI (PAPP)
+resumo: A Pesquisa de Avaliação das Práticas PEI (PAPP) terá início na próxima segunda-feira, 10/11. A aplicação será realizada via SED. A PAPP está estruturada em blocos, sendo: 04 pesquisas para os estudantes; 02 pesquisas para professores, Diretores e CGPG; 01 pesquisa para o Vice-diretor. É fundamental reforçar junto às escolas a importância de responder todos os blocos...
+
 
 ## efape: ESCOLA DE FORMAÇÃO E APERFEIÇOAMENTO DOS PROFISSIONAIS DA EDUCAÇÃO
 tipo: lista
