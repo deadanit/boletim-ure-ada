@@ -60,6 +60,20 @@ titulo:
 resumo: 
 
 
+## seduc: SECRETARIA DA EDUCAÇÃO DO ESTADO DE SÃO PAULO
+tipo: lista
+nomeArquivo: 
+titulo: 
+resumo: 
+
+
+## sggd: SECRETARIA DE GESTÃO E GOVERNO DIGITAL
+tipo: lista
+nomeArquivo: 
+titulo: 
+resumo: 
+
+
 ## suart: SUBSECRETARIA DE ARTICULAÇÃO DA REDE DE ENSINO
 tipo: lista
 nomeArquivo: 
